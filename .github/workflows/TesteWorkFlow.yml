@@ -1,0 +1,28 @@
+name: Teste fluxo
+
+# Define as triggers
+on:
+  push:
+    branches: [ main, dev ]
+
+# Define as tarefas
+jobs:
+  # Escolhe um nome para o job
+  test_job:
+    # Nome na execução
+    name: Executando job de teste
+    # Ambiente
+    runs-on: ubuntu-latest
+    # Etapas
+    steps:
+    # Nome da etapa
+    - name: Step 1
+    # Action utilizada, nesse caso checkout que faz download do codigo fonte, na versao 2 (@v2)
+      uses: actions/checkout@v2
+
+    - name: Step 2
+    # Comando que vai rodar a etapa
+      run: echo "Primeiro job no Github Actions rodando"
+
+    - name: Step 3
+      run: echo "Job concluído!"
