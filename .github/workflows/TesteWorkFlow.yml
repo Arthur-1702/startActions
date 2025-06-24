@@ -27,8 +27,3 @@ jobs:
       with:
         username: 'arthur1702'
         password: ${{ secrets.DOCKERHUB_PASSWORD }}
-        # Specifies whether the given registry is ECR (auto, true or false)
-        ecr: # optional, default is auto
-        # Log out from the Docker registry at the end of a job
-        logout: # optional, default is true
-              
