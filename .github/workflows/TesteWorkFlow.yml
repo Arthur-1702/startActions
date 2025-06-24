@@ -12,7 +12,7 @@ jobs:
     # Nome na execução
     name: Executando job de teste
     # Ambiente
-    runs-on: ubuntu-hosted
+    runs-on: ubuntu-latest
     # Etapas
     steps:
     # Nome da etapa
