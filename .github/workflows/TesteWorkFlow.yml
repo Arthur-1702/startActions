@@ -36,6 +36,6 @@ jobs:
         # Push is a shorthand for --output=type=registry
         push: true
         # List of tags
-        tags: 'latest'
+        tags: 'arthur1702/primeiroprojetoteste:latest'
 
             
